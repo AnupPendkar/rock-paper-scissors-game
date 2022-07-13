@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap");
+    </style>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="main-container">
+      <div class="scoreboard">
+        <div class="logo">
+          <img src="images/logo.svg" alt="logo" />
+        </div>
+        <div class="score-container">
+          <p class="text">SCORE</p>
+          <p class="score">0</p>
+        </div>
+      </div>
+      <div class="hands">
+        <img
+          onclick="handleClick(0)"
+          class="paper"
+          src="images/Paper.png"
+          alt=""
+        />
+        <img
+          onclick="handleClick(1)"
+          class="scissors"
+          src="images/Scissors.png"
+          alt=""
+        />
+        <img
+          onclick="handleClick(2)"
+          class="rock"
+          src="images/Rock.png"
+          alt=""
+        />
+      </div>
+      <div class="result-container">
+        <div class="hands-container">
+          <div class="your-pick">
+            <img
+              id="your-hand"
+              class="result-paper"
+              src="images/Paper.png"
+              alt=""
+            />
+            <p class="text">YOU PICKED</p>
+          </div>
+          <div class="comp-pick">
+            <img id="comp-hand" class="paper" src="images/Paper.png" alt="" />
+            <p class="text">COMPUTER PICKED</p>
+          </div>
+        </div>
+        <div class="result">
+          <p class="result-text">YOU WIN</p>
+          <button class="btn">PLAY AGAIN</button>
+        </div>
+      </div>
+      <button class="rules-btn">RULES</button>
+      <div class="rules-container">
+        <div class="rules-wrapperr">
+          <p class="rules-text">RULES</p>
+          <svg
+            class="close-btn"
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+          >
+            <path
+              fill="#3B4262"
+              fill-rule="evenodd"
+              d="M16.97 0l2.122 2.121-7.425 7.425 7.425 7.425-2.121 2.12-7.425-7.424-7.425 7.425L0 16.97l7.425-7.425L0 2.121 2.121 0l7.425 7.425L16.971 0z"
+              opacity=".25"
+            />
+          </svg>
+        </div>
+        <img src="images/image-rules.svg" alt="" />
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
